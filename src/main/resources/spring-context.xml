@@ -8,6 +8,7 @@
        </bean>
 
         <bean id="singletonBean" class="kz.kaznitu.lessons.SingletonBean">
-            <property name="prototypeBean" ref="prototypeBean"/>
+            <!--<property name="prototypeBean" ref="prototypeBean"/>-->
+            <lookup-method name="getPrototypeBean" bean="prototypeBean" />
         </bean>
 </beans>

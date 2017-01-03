@@ -14,4 +14,5 @@ public class PrototypeBean {
     public void setMessage(String message) {
         this.message = message;
     }
+
 }

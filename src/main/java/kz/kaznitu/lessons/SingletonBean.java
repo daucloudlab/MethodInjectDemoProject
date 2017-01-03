@@ -1,18 +1,20 @@
 package kz.kaznitu.lessons;
 
 
-public class SingletonBean {
+public abstract class SingletonBean {
     private PrototypeBean prototypeBean ;
 
     public SingletonBean(){
         System.out.println("Singleton Bean құрылды!!!");
     }
 
-    public PrototypeBean getPrototypeBean() {
-        return prototypeBean;
-    }
+//    public PrototypeBean getPrototypeBean() {
+//        return prototypeBean;
+//    }
+//
+//    public void setPrototypeBean(PrototypeBean prototypeBean) {
+//        this.prototypeBean = prototypeBean;
+//    }
 
-    public void setPrototypeBean(PrototypeBean prototypeBean) {
-        this.prototypeBean = prototypeBean;
-    }
+    public abstract PrototypeBean getPrototypeBean();
 }
